@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <title>AK Technology Solutions</title>
+    </head>
+    <body>
+
+        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">AK Technology Solutions</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#carrers" class="nav__link">Carrers</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bxs-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__subtitle">AK Technology Solutions</h1>
+                        <p class="">We Build Mobile & Web Apps That Drive Growth</p>
+                        <p class="">
+                            AK Technology Solutions, we specialize in crafting innovative Android, iOS, and web applications that empower businesses to grow and succeed in the digital world. We deliver reliable, scalable, and user-friendly tech solutions tailored to your needs.
+                        </p>
+                    <!-- <a href="#menu" class="button">View Menu</a> -->
+                    </div>
+    
+                  <img src="static/img/home.jpg" alt="" class="home__img">
+                </div>
+            </section>
+            
+
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">Your Mobile & Web App Experts</h2>
+                        <p class="about__description">We are a technology company dedicated to delivering top-tier mobile and web applications. Our mission is to combine creativity with technical expertise to create seamless digital experiences. With a client-first approach, we support startups and enterprises alike through every step of their digital journey.</p>
+                       <!-- <a href="#" class="button">Explore history</a> --> 
+                    </div>
+
+                    <img src="static/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Services</span>
+                <p class="">Certainly! Here's a structured presentation of your services—Android & iOS App Development, Custom Web Application Development, and App Maintenance & Support—each accompanied by relevant imagery and concise descriptions to enhance your website's appeal.</p>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                
+                        <h3 class="services__title">📱 Android & iOS App Development</h3>
+                        <p class="services__description">Custom mobile apps built for performance, usability, and scale. </p>
+                    </div>
+
+                    <div class="services__content">
+                    
+                        <h3 class="services__title">🌐 Custom Web Application Development</h3>
+                        <p class="services__description">Robust web platforms tailored to your business goals.</p>
+                    </div>
+
+                    <div class="services__content">
+                       
+                        <h3 class="services__title">🔧 App Maintenance & Support</h3>
+                        <p class="services__description">Ongoing updates, bug fixes, and performance optimization.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu section bd-container" id="careers">
+                <span class="section-subtitle">Careers</span>
+            
+                <section id="careers">
+                    {% include "careers.html" %}
+                </section>
+            </section>
+
+            
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you want to service, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">AK Technology Solutions</a>
+                    <span class="footer__description">Building the Future with Mobile & Web App</span>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Useful Links</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#carrers" class="footer__link">Carrers</a></li> 
+                        <li><a href="#contact" class="footer__link">Contact Us</a></li> 
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="tos.html" class="footer__link">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Bangalore - IN</li>
+                        <li>arunkumar.govindarajb+contact@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2025 AK Technology Solutions</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
