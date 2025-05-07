@@ -24,7 +24,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#carrers" class="nav__link">Carrers</a></li>
+                        <li class="nav__item"><a href="#careers" class="nav__link">Careers</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
                         <li><i class='bx bxs-moon change-theme' id="theme-button"></i></li>
@@ -97,7 +97,7 @@
                 <span class="section-subtitle">Careers</span>
             
                 <section id="careers">
-                    {% include "careers.html" %}
+                    {% include "career.html" %}
                 </section>
             </section>
 
@@ -112,6 +112,11 @@
 
                     <div class="contact__button">
                         <a href="#" class="button">Contact us now</a>
+                        </div>
+                        <ul>
+                            <li>Bangalore - IN</li>
+                            <li><a href="mailto:arunkumar.govindarajb+contact@gmail.com">arunkumar.govindarajb+contact@gmail.com</a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -131,7 +136,7 @@
                         <li><a href="#home" class="footer__link">Home</a></li>
                         <li><a href="#about" class="footer__link">About Us</a></li>
                         <li><a href="#services" class="footer__link">Services</a></li>
-                        <li><a href="#carrers" class="footer__link">Carrers</a></li> 
+                        <li><a href="#careers" class="footer__link">Careers</a></li> 
                         <li><a href="#contact" class="footer__link">Contact Us</a></li> 
                     </ul>
                 </div>
@@ -139,21 +144,14 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Legal</h3>
                     <ul>
-                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
-                        <li><a href="tos.html" class="footer__link">Terms and Conditions</a></li>
+                        <li><a href="{{ url_for('privacy') }}" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="{{ url_for('tos') }}" class="footer__link">Terms and Conditions</a></li>
                     </ul>
                 </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Adress</h3>
-                    <ul>
-                        <li>Bangalore - IN</li>
-                        <li>arunkumar.govindarajb+contact@gmail.com</li>
-                    </ul>
-                </div>
             </div>
 
-            <p class="footer__copy">&#169; 2025 AK Technology Solutions</p>
+            <p class="footer__copy">&#169; 2025 AK Technology Solutions. All rights reserved</p>
         </footer>
 
         <script src="https://unpkg.com/scrollreveal"></script>

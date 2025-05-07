@@ -55,6 +55,10 @@
 
 html{
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -104,7 +108,9 @@ img{
 
 
 .section{
-  padding: 4rem 0 2rem;
+  width: 100vw;
+  margin: 0;
+  padding: 4rem 0 2rem; /* keep vertical padding only */
 }
 
 .section-title, .section-subtitle{
@@ -125,11 +131,18 @@ img{
 }
 
 
-.bd-container{
-  max-width: 960px;
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+.bd-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 1rem; /* Optional horizontal spacing */
+}
+
+.home .bd-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 .bd-grid{
