@@ -106,13 +106,6 @@ img{
   height: auto;
 }
 
-
-.section{
-  width: 100vw;
-  margin: 0;
-  padding: 4rem 0 2rem; /* keep vertical padding only */
-}
-
 .section-title, .section-subtitle{
   text-align: center;
 }
@@ -131,18 +124,35 @@ img{
 }
 
 
+.section {
+  width: 100vw;
+}
+
 .bd-container {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0 1rem; /* Optional horizontal spacing */
+  padding: 3.5rem; /* Optional horizontal spacing */
 }
 
 .home .bd-container {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0 1rem;
+  padding: 3.5rem;
+}
+
+.hint__content,
+.workwithus__content {
+  margin-bottom: var(--mb-4);
+  text-align: left;
+}
+
+.workwithus__content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  display: inline-block;
 }
 
 .bd-grid{
