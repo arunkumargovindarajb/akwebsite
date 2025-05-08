@@ -106,7 +106,7 @@ img{
   height: auto;
 }
 
-.section-title, .section-subtitle{
+.section-title, .section-subtitle,.career-title{
   text-align: center;
 }
 
@@ -142,7 +142,7 @@ img{
   padding: 3.5rem;
 }
 
-.hint__content,
+.hint__content,.career-subtitle
 .workwithus__content {
   margin-bottom: var(--mb-4);
   text-align: left;
