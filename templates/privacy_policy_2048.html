@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 2048 Game</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <style>
+        .policy-container {
+            max-width: 850px;
+            margin: auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .card {
+            background: var(--container-color);
+            padding: 1.8rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--title-color);
+            margin-bottom: .6rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.55;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="{{ url_for('base') }}" class="nav__logo">2048</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="{{ url_for('base') }}" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="{{ url_for('how_to_play_2048') }}" class="nav__link">How to Play</a></li>
+                    <li class="nav__item"><a href="{{ url_for('privacy_policy_2048') }}" class="nav__link active-link">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="policy-container">
+
+            <h1 class="section-title">Privacy Policy</h1>
+
+            <div class="card">
+                <div class="card-title">📌 Introduction</div>
+                <p>Your privacy is important to us. This page explains how data inside the 2048 game is handled.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">📱 What We Collect</div>
+                <p>We do <b>not</b> collect personal or sensitive data.  
+                   The game runs entirely on your device.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">📊 Analytics</div>
+                <p>Anonymous analytics may be used to improve gameplay experience.  
+                   No personally identifiable information is collected.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🔒 Data Security</div>
+                <p>Your scores and game progress are stored locally on your device and never transmitted.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">👤 Third-Party Access</div>
+                <p>No user data is shared with advertisers or any external parties.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">💰 Ads & Monetization</div>
+                <p>
+                    The app is free and supported by non-invasive ads:<br><br>
+                    • A short ad may appear when tapping <b>"New Game"</b><br>
+                    • Rewarded ads can be watched to unlock additional undo moves
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🔄 Policy Updates</div>
+                <p>We may update this privacy policy. Changes will be posted on this page.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">📅 Last Updated</div>
+                <p>June 20, 2025</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

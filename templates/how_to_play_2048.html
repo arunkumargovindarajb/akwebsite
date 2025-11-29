@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play 2048</title>
+
+    <!-- Main global CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <style>
+        .howto-container {
+            max-width: 850px;
+            margin: auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .card {
+            background: var(--container-color);
+            padding: 1.8rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--title-color);
+            margin-bottom: .6rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.55;
+            color: var(--text-color);
+        }
+
+        ul.tips {
+            padding-left: 1.3rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="{{ url_for('base') }}" class="nav__logo">2048</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="{{ url_for('base') }}" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="{{ url_for('how_to_play_2048') }}" class="nav__link active-link">How to Play</a></li>
+                <li class="nav__item"><a href="{{ url_for('privacy_policy_2048') }}" class="nav__link">Privacy</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="howto-container">
+
+        <h1 class="section-title">How to Play 2048</h1>
+
+        <div class="card">
+            <div class="card-title">🎮 Goal of the Game</div>
+            <p>Combine numbered tiles to reach the <b>2048 tile</b>. The game ends when the board is full and no moves remain.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🧠 How It Works</div>
+            <p>Swipe (up, down, left, right) to slide all tiles.  
+               When two tiles with the same number collide, they <b>merge</b> into a higher value tile.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🎯 Strategy Tips</div>
+            <ul class="tips">
+                <li>Keep your highest tile locked in one corner.</li>
+                <li>Avoid random swipes — move with purpose.</li>
+                <li>Build vertical/horizontal chains for easier merges.</li>
+                <li>Leave space for future tile movements.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📱 Controls</div>
+            <p>
+                • Mobile: <b>Swipe</b> in any direction<br>
+                • Desktop: use <b>Arrow Keys</b><br>
+                • Web: <b>Swipe or Arrow Keys</b>
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🏁 Winning & Losing</div>
+            <p>
+                ✔ You <b>win</b> when you reach a 2048 tile (continue if you like)<br>
+                ✘ You <b>lose</b> when no valid moves remain
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Main JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

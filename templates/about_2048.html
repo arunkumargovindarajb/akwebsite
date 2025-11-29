@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About 2048 Game</title>
+
+    <!-- Your Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: var(--container-color);
+            padding: 1.8rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--title-color);
+            margin-bottom: .8rem;
+        }
+
+        .playstore-btn {
+            display: inline-block;
+            background: var(--first-color);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 1rem 0;
+        }
+
+        .playstore-btn:hover {
+            background: var(--first-color-alt);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="{{ url_for('base') }}" class="nav__logo">2048</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="{{ url_for('base') }}" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="{{ url_for('how_to_play_2048') }}" class="nav__link">How to Play</a></li>
+                    <li class="nav__item"><a href="{{ url_for('privacy_policy_2048') }}" class="nav__link">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="about-container">
+
+            <h1 class="section-title">About 2048</h1>
+
+            <!-- Play Store Button -->
+            <a class="playstore-btn"
+               href="https://play.google.com/store/apps/details?id=com.ak.slidingtilepuzzle"
+               target="_blank">👉 Download on Google Play</a>
+
+
+            <!-- Cards -->
+            <div class="card">
+                <div class="card-title">📦 App Version</div>
+                <p>Latest version information is displayed inside the app.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🧩 What is 2048?</div>
+                <p>2048 is a single-player sliding puzzle game where you combine tiles to reach the number 2048.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🎓 Who Created It?</div>
+                <p>Developed by <b>AK Technology Solutions</b> in June 2025 and inspired by games like 1024 & Threes.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">📱 Platform & Availability</div>
+                <p>The game is available on Android, iOS, desktop, and web.  
+                   This version is built with Flutter for cross-platform support.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🛠️ Based on Open Source</div>
+                <p>
+                    Includes modified MIT-licensed code from:<br>
+                    <b>Jack’s 2048 Game</b><br>
+                    GitHub: <i>flutter_2048</i>
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">💰 Monetization & Ads</div>
+                <p>
+                    • Short ad when pressing <b>New Game</b><br>
+                    • After 2 undos, watch a reward ad to unlock more<br><br>
+                    Ads support development.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">❤️ Why People Love It</div>
+                <p>Simple, addictive, and improves strategic thinking — enjoyed by millions worldwide.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
